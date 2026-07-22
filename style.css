@@ -1,0 +1,192 @@
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bright-orange:hsl(31,77%,52%);
+    --dark-cyan:hsl(184,100%,22%);
+    --very-dark-cyan:hsl(179,100%,13%);
+    --transparent-white:hsla(0,0%,100%,0.75);
+    --light-gray:hsl(0,0%,95%);
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--light-gray);
+    font-family:'Lexend Deca',sans-serif;
+    padding:88px 24px;
+}
+
+.container{
+    width:920px;
+    display:flex;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.card{
+    flex:1;
+    padding:48px;
+}
+
+.sedan{
+    background:var(--bright-orange);
+}
+
+.suv{
+    background:var(--dark-cyan);
+}
+
+.luxury{
+    background:var(--very-dark-cyan);
+}
+
+/* Icon */
+.card-icon{
+    display:block;
+    width:64px;
+    height:40px;
+    margin-bottom:40px;
+}
+
+/* Heading */
+.card h2{
+    font-family:'Big Shoulders Display',cursive;
+    font-size:40px;
+    font-weight:700;
+    line-height:100%;
+    text-transform:uppercase;
+    color:#fff;
+    margin-bottom:35px;
+}
+
+/* Paragraph */
+.card p{
+    width:231px;
+    font-family:'Lexend Deca', sans-serif;
+    font-weight:400;
+    font-size:15px;
+    line-height:25px;
+    letter-spacing:0;
+    color:hsla(0,0%,100%,0.75);
+    margin-bottom:25px;
+}
+
+/* Button */
+.card button{
+    width:146px;
+    height:48px;
+    border:2px solid #fff;
+    border-radius:25px;
+    background:#fff;
+    font-family:'Lexend Deca',sans-serif;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sedan button{
+    color:var(--bright-orange);
+}
+
+.suv button{
+    color:var(--dark-cyan);
+}
+
+.luxury button{
+    color:var(--very-dark-cyan);
+}
+
+.card button:hover{
+    background:transparent;
+    color:#fff;
+}
+
+/* Tablet */
+
+@media (max-width:900px){
+
+.container{
+    width:700px;
+}
+
+.card{
+    padding:40px;
+}
+
+.card-icon{
+    margin-bottom:40px;
+}
+
+.card h2{
+    font-size:36px;
+    margin-bottom:35px;
+}
+
+ .card p{
+    width:231px;
+    font-family:'Lexend Deca', sans-serif;
+    font-weight:400;
+    font-size:15px;
+    line-height:25px;
+    letter-spacing:0;
+    color:hsla(0,0%,100%,0.75);
+    margin-bottom:25px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+body{
+    padding:88px 24px;
+}
+
+.container{
+    width:327px;
+    flex-direction:column;
+    border-radius:8px;
+}
+
+.card{
+    width:327px;
+    padding:48px;
+}
+
+.card-icon{
+    width:64px;
+    height:40px;
+    margin-bottom:40px;
+}
+
+.card h2{
+    font-size:40px;
+    margin-bottom:35px;
+}
+
+ .card p{
+    width:231px;
+    font-family:'Lexend Deca', sans-serif;
+    font-weight:400;
+    font-size:15px;
+    line-height:25px;
+    letter-spacing:0;
+    color:hsla(0,0%,100%,0.75);
+    margin-bottom:25px;
+}
+.card button{
+    width:146px;
+    height:48px;
+    border-radius:25px;
+}
+
+}
